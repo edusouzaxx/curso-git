@@ -277,6 +277,24 @@ $ touch logo.jpg
 $ git status
 $ echo *.jpg > .gitignore
 $ git status
+$ git add .
+$ git commit -m "adicionado .gitignore"
+$ git status
+
+	# On branch master
+	nothing to commit, working directory clean
+
+
+$ mkdir temp
+$ touch temp/tash
+$ touch temp/tesh
+$ git status
+$ vi .gitignore
+
+	logo.jpg
+	temp/
+
+$ git status
 
 ------------------------------------------------------------------------
 
