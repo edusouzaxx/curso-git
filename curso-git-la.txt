@@ -1,0 +1,130 @@
+git-quick-start-linux-academy
+
+
+------------------------------------------------------------------------
+
+sudo yum install git
+
+sudo apt-get install git
+
+------------------------------------------------------------------------
+
+$ git config --global user.name "F2727208 Eduardo Cardoso de Souza"
+
+$ git config --global user.email "edusouzaxx@bb.com.br"
+
+$ git config -l
+
+
+user.name=F2727208 Eduardo Cardoso de Souza
+user.email=edusouzaxx@bb.com.br
+push.default=simple
+
+$ cat ~/.gitconfig  (global)
+
+[user]
+	name = F2727208 Eduardo Cardoso de Souza
+	email = edusouzaxx@bb.com.br
+[push]
+	default = simple
+
+
+------------------------------------------------------------------------
+
+$ git config --system core.editor vim 
+
+$ sudo cat /etc/gitconfig  (system)
+
+[core]
+	editor = vim
+
+
+------------------------------------------------------------------------
+#Repositorios
+
+Inicializando um repositório
+
+$ cd ~
+
+$ mkdir git
+
+$ cd git
+
+$ git init curso-git
+
+	Initialized empty Git repository in /home/f2727208/git/curso-git/.git/
+
+$ ll ~/git//curso-git/.git/
+
+	total 16
+	drwxrwxr-x 2 f2727208 f2727208    6 Feb 28 19:09 branches
+	-rw-rw-r-- 1 f2727208 f2727208   92 Feb 28 19:09 config
+	-rw-rw-r-- 1 f2727208 f2727208   73 Feb 28 19:09 description
+	-rw-rw-r-- 1 f2727208 f2727208   23 Feb 28 19:09 HEAD
+	drwxrwxr-x 2 f2727208 f2727208 4096 Feb 28 19:09 hooks
+	drwxrwxr-x 2 f2727208 f2727208   20 Feb 28 19:09 info
+	drwxrwxr-x 4 f2727208 f2727208   28 Feb 28 19:09 objects
+	drwxrwxr-x 4 f2727208 f2727208   29 Feb 28 19:09 refs
+
+
+$ cd curso-git
+
+$ vim curso-git-la.txt
+
+$ git status
+
+	# On branch master
+	#
+	# Initial commit
+	#
+	# Untracked files:
+	#   (use "git add <file>..." to include in what will be committed)
+	#
+	#	curso-git-la.txt
+	nothing added to commit but untracked files present (use "git add" to track)
+
+$ git add curso-git-la.txt
+
+$ git status
+
+	# On branch master
+	#
+	# Initial commit
+	#
+	# Changes to be committed:
+	#   (use "git rm --cached <file>..." to unstage)
+	#
+	#	new file:   curso-git-la.txt
+	#
+
+
+Modifiquei o arquivo
+
+$ git status
+
+	# On branch master
+	#
+	# Initial commit
+	#
+	# Changes to be committed:
+	#   (use "git rm --cached <file>..." to unstage)
+	#
+	#	new file:   curso-git-la.txt
+	#
+	# Changes not staged for commit:
+	#   (use "git add <file>..." to update what will be committed)
+	#   (use "git checkout -- <file>..." to discard changes in working directory)
+	#
+	#	modified:   curso-git-la.txt
+	#
+
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------
+
+------------------------------------------------------------------------
