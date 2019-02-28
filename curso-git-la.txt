@@ -250,8 +250,33 @@ $ ls -l
 
 $ git log
 
-------------------------------------------------------------------------
 
+$ touch quarto-arquivo.txt
+$ ls -l
+$ git add .
+$ git commit -a -m "quarto-arquivo.txt adicionado"
+$ rm quarto-arquivo.txt
+$ ls -l
+$ git status
+$ git checkout -- quarto-arquivo.txt
+$ ls -l
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+# Git ignore
+
+$ touch logo.jpg
+$ git status
+$ echo *.jpg > .gitignore
+$ git status
 
 ------------------------------------------------------------------------
 
