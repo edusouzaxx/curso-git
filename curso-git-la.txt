@@ -184,8 +184,53 @@ $ git status
 	#	terceiro-arquivo.txt
 	no changes added to commit (use "git add" and/or "git commit -a")
 
+$ git commit 
 
+Sem informar a tag -m "mensagem" vai abrir um editor para colocar a mensagem do commit que é obrigatória 
 
+$ git status
+
+	# On branch master
+	nothing to commit, working directory clean
+
+$ git log
+
+	commit 2523eefede1513bf3caf578398bdf3003276120e
+	Author: F2727208 Eduardo Cardoso de Souza <edusouzaxx@bb.com.br>
+	Date:   Thu Feb 28 19:31:16 2019 -0300
+	
+		commit com terceiro arquivo
+	
+	commit 3f093ee602657fdd69950609da1aa443092a673d
+	Author: F2727208 Eduardo Cardoso de Souza <edusouzaxx@bb.com.br>
+	Date:   Thu Feb 28 19:26:56 2019 -0300
+	
+		com aoutro-arquivo.txt
+	
+	commit ef44929a44b52d5a1babf7db11366788b2fa5c42
+	Author: F2727208 Eduardo Cardoso de Souza <edusouzaxx@bb.com.br>
+	Date:   Thu Feb 28 19:24:16 2019 -0300
+	
+		primeiro commit
+
+$ git rm terceiro-arquivo.txt
+
+	rm 'terceiro-arquivo.txt'
+
+$ git status
+
+	# On branch master
+	# Changes to be committed:
+	#   (use "git reset HEAD <file>..." to unstage)
+	#
+	#	deleted:    terceiro-arquivo.txt
+	#
+	# Changes not staged for commit:
+	#   (use "git add <file>..." to update what will be committed)
+	#   (use "git checkout -- <file>..." to discard changes in working directory)
+	#
+	#	modified:   curso-git-la.txt
+	#
 
 
 ------------------------------------------------------------------------
